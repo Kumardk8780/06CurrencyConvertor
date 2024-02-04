@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { InputBox } from './components'
 import useCurrencyInfo from './hooks/useCurrnecyInfo'
 
-
 function App() {
 
   const [amount, setAmount] = useState(0);
@@ -13,7 +12,7 @@ function App() {
   const currencyInfo = useCurrencyInfo(from)
 
   const BackgroundImage = 'https://images.pexels.com/photos/2874066/pexels-photo-2874066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  const CardImage = 'https://images.unsplash.com/photo-1704310957636-be5d273c8f0a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNzB8fHxlbnwwfHx8fHw%3D'
+  // const CardImage = 'https://images.unsplash.com/photo-1704310957636-be5d273c8f0a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNzB8fHxlbnwwfHx8fHw%3D'
   const options = Object.keys(currencyInfo)
 
   const swap = () => {
